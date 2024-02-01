@@ -1,0 +1,218 @@
+body{
+    /* background-color: rgba(166, 198, 159, 0.216); */
+    color: white;
+    /* background: radial-gradient(rgb(185, 113, 25), rgb(255, 157, 0), transparent); */
+    /* background-color: rgba(79, 165, 157, 0.521); */
+    /* height: 100vw; */
+    background-image: url("./assets/Background.jpg");
+    background-size: cover;
+    font-size: large;
+    font-weight: bold;
+
+}
+header
+{
+    color: orange;
+    text-align: center;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.api-list{
+    display: grid;
+    grid-template-columns: repeat(100, 1fr);
+    /* background: radial-gradient(rgb(185, 113, 25), rgb(255, 157, 0), transparent);
+    height: 50vw; */
+.api-1
+{
+    grid-column: 10/32;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    /* background-color: rgb(47, 116, 133); */
+    /* border-radius: 1rem; */
+    
+}
+}
+    
+
+.api-1
+{
+    height: 30vw;
+    width: 22vw;
+    perspective: 60vw;
+}
+
+.card-1{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.front-1, .back-1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    
+}
+
+.front-1{
+    background-image:url("./assets/LaughingDonkey.jpg ");
+    background-size: cover;
+}
+.api-1:hover > .card-1{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.back-1{
+    background-image: url("./assets/Smile.jpg");
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+
+
+
+.api-2
+{
+    grid-column: 40/62;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    /* background-color: rgb(47, 116, 133);
+    border-radius: 1rem; */
+    
+}
+
+.api-2
+{
+    height: 30vw;
+    width: 22vw;
+    perspective: 60vw;
+}
+
+.card-2{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.front-2, .back-2{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+}
+
+.front-2{
+    background-image:url("./assets/LaughingDonkey.jpg ");
+    background-size: cover;
+}
+.api-2:hover > .card-2{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.back-2{
+    background-image: url("./assets/Smile.jpg");
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+
+
+.api-3
+{
+    grid-column: 70/92;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    /* background-color: rgb(47, 116, 133);
+    border-radius: 1rem; */
+}
+
+.api-3
+{
+    height: 30vw;
+    width: 22vw;
+    perspective: 60vw;
+}
+
+.card-3{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+
+.front-3, .back-3{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+}
+
+.front-3{
+    background-image:url("./assets/LaughingDonkey.jpg ");
+    background-size: cover;
+}
+.api-3:hover > .card-3{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.back-3{
+    background-image: url("./assets/Smile.jpg");
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+
+
+.api-caller
+{
+    margin-top: 5vw;
+    height: 35vw;
+}
+@media(max-width:600px)
+{
+    .api-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+footer{
+    height: 7vw;
+    font-family: chiller;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: rgb(98, 200, 55);
+    font-size: 1.5rem;
+}
